@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{# {% block title %}Liste des recette{% endblock %} #}
+{% block title %}{{slug}}{% endblock %}
+
+
+{% block body %}
+
+<h3>Bienvenue sur la recette numéro {{id}}</h3>
+<p>Comment faire 1 {{ slug }}</p>
+
+{% endblock %}
