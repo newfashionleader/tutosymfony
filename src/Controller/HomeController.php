@@ -16,7 +16,7 @@ class HomeController extends AbstractController
         // die;
         // dd($request->query->get('nom'));
         // dd($request);
-        return new Response("Hello ".$request->query->get('nom', 'World !!!'));
+       return $this->render("home/index.html.twig");
     }
   
 }

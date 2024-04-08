@@ -38,7 +38,13 @@ class RecipeController extends AbstractController
         // ]);
         return $this->render('recipe/show.html.twig', [
             'slug' => $slug,
-            'id' => $id
+            'id' => $id,
+            'user' => [
+                "firstname" => "Abdel Doudou",
+                "lastname" => "Medoki"
+               
+
+            ]
         ]);
     }
     

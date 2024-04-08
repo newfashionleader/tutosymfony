@@ -7,6 +7,17 @@
 {% block body %}
 
 <h3>Bienvenue sur la recette numéro {{id}}</h3>
-<p>Comment faire 1 {{ slug }}</p>
+
+<h4>Comment faire 1 {{ slug |title }}</h4>
+<p>Recette créée par {{ user.firstname }} {{ user.lastname }}</p>
+{# <p>Recette créée par {{ user.firstname ~" "~ user.lastname }}</p>  Comment concaténer #} 
+
 
 {% endblock %}
+
+
+
+
+
+
+

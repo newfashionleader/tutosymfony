@@ -7,5 +7,18 @@
 {% block body %}
 
 <h3>Bienvenue dans la liste des recettes</h3>
+<ul>
+    <li>
+        <a href={{ url('app_recipe_show', {id:4, slug:'poulet-dg'})}}>Poulet DG</a>
+    </li>
+
+     <li>
+        <a href={{ url('app_recipe_show', {id:4, slug:'pizza-bolognaise'})}}>Pizza Bolognaise</a>
+    </li>
+
+    <li>
+        <a href={{ url('app_recipe_show', {id:4, slug:'tajine'})}}>Tajine</a>
+    </li>
+</ul>
 
 {% endblock %}
