@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+ 
+{% block title %}{% endblock %}
+
+{% block body %}
+<div class = "row">
+        <div class= "col-md-6 mx-auto">
+    <h1 align = "center">{{ recipe.title|title }}</h1>
+    <br>
+    {# Attention, le form est la fonction fourni par symfony, et monForm c'est le nom qui vient de la méthode edit dans RecipeController #}
+    {# {{ form(monForm) }} #}
+    
+
+    {# Ici c'est une des manières de modifier l'agencement des formulaires en modifiant le label du bouton #}
+    {{ form_start(monForm)}}
+        {{ form_row(monForm.title) }}
+        {{ form_row(monForm.content) }}
+        {{ form_row(monForm.duration) }}
+        {{ form_row(monForm.save,{'label':'Editer'}) }}  
+    {{ form_end(monForm) }} 
+    </div>
+    </div>  
+{% endblock %}

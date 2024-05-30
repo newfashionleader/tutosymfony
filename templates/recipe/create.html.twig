@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{# {% block title %}Add Recipe{% endblock %} #}
+{% block title 'Add Recipe'%}
+{% block body %}
+    <div class = "row">
+        <div class= "col-md-6 mx-auto">
+            <h1 align="center">Créer une nouvelle Recette</h1>  
+            <br>
+            {# Attention, le form est la fonction fourni par symfony, et monForm c'est le nom qui vient de la méthode edit dans RecipeController #}        
+            {{form(form)}}
+        </div>
+    </div>
+{% endblock %}
